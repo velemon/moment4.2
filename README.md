@@ -40,6 +40,7 @@ Användaren fyller i användarnamn och lösenord.
 Skickas till backend via:
 
 POST /api/auth/register
+
 2. Inloggning
 
 Användaren loggar in via:
@@ -49,6 +50,7 @@ POST /api/auth/login
 Vid lyckad inloggning returneras en JWT-token som sparas i:
 
 localStorage
+
 3. Skyddad sida (Dashboard)
 
 Dashboard hämtar skyddad data från API:et:
@@ -58,6 +60,7 @@ GET /api/profile
 JWT-token skickas i header:
 
 Authorization: Bearer <token>
+
 4. Logout
 
 Vid utloggning tas JWT-token bort från localStorage och användaren skickas tillbaka till login-sidan.
