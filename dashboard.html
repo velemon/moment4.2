@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="checkAuth()">
+
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <button onclick="loadData()">Hämta skyddad data</button>
+    <button onclick="logout()">Logout</button>
+
+    <pre id="output"></pre>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
