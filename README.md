@@ -33,7 +33,7 @@ Syftet med uppgiften är att:
 
 ## Hur applikationen fungerar
 
-1. Registrering
+**1. Registrering**
 
 Användaren fyller i användarnamn och lösenord.
 
@@ -41,7 +41,7 @@ Skickas till backend via:
 
 POST /api/auth/register
 
-2. Inloggning
+**2. Inloggning**
 
 Användaren loggar in via:
 
@@ -51,7 +51,7 @@ Vid lyckad inloggning returneras en JWT-token som sparas i:
 
 localStorage
 
-3. Skyddad sida (Dashboard)
+**3. Skyddad sida (Dashboard)**
 
 Dashboard hämtar skyddad data från API:et:
 
@@ -61,7 +61,7 @@ JWT-token skickas i header:
 
 Authorization: Bearer <token>
 
-4. Logout
+**4. Logout**
 
 Vid utloggning tas JWT-token bort från localStorage och användaren skickas tillbaka till login-sidan.
 
